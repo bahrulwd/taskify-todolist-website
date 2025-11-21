@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../contexts';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon, faHome, faLayerGroup, faDesktop, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon, faHome, faLayerGroup, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { useState, useEffect } from 'react';
 
 const LandingNavbar = () => {
