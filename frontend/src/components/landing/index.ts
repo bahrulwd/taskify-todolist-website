@@ -1,0 +1,9 @@
+export { default as LandingNavbar } from './LandingNavbar';
+export { default as HeroSection } from './HeroSection';
+export { default as FeaturesSection } from './FeaturesSection';
+export { default as HowItWorks } from './HowItWorks';
+export { default as DemoSection } from './DemoSection';
+export { default as BenefitsSection } from './BenefitsSection';
+export { default as TestimonialsSection } from './TestimonialsSection';
+export { default as PricingSection } from './PricingSection';
+export { default as LandingFooter } from './LandingFooter';
