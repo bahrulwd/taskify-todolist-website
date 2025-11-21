@@ -39,9 +39,9 @@ const LandingNavbar = () => {
   }, []);
 
   const navLinks = [
-    { id: 'home', label: 'Home', icon: faHome, href: '#hero' },
-    { id: 'features', label: 'Fitur', icon: faLayerGroup, href: '#features' },
-    { id: 'demo', label: 'Demo', icon: faDesktop, href: '#demo' }
+    { id: 'home', label: 'Home', icon: faHome, href: '#hero', external: false },
+    { id: 'features', label: 'Fitur', icon: faLayerGroup, href: '#features', external: false },
+    { id: 'demo', label: 'Demo', icon: faDesktop, href: '#demo', external: false }
   ];
 
   return (

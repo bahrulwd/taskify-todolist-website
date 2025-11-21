@@ -192,13 +192,24 @@ export const TaskProvider: React.FC<TaskProviderProps> = ({ children }) => {
     updateTask(taskId, { status });
   };
 
+  const reorderTasks = (taskId: string, newIndex: number, status: TaskStatus) => {
+    const task = tasks.find(t => t.id === taskId);
+    if (!task) return;
+
+    const updatedTasks = tasks.filter(t => t.id !== taskId);
+    const taskWithNewStatus = { ...task, status };
+    updatedTasks.splice(newIndex, 0, taskWithNewStatus);
+    setTasks(updatedTasks);
+  };
+
   return (
     <TaskContext.Provider value={{ 
       tasks, 
       addTask, 
       updateTask, 
       deleteTask,
-      updateTaskStatus 
+      updateTaskStatus,
+      reorderTasks
     }}>
       {children}
     </TaskContext.Provider>
